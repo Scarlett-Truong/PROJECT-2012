@@ -1,0 +1,35 @@
+@charset "utf-8";
+#container {
+	padding: 0px;
+	margin-top: 95px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 1000px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/discover/bg2.jpg);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #adadad;
+}
+
+#footer {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #fff;
+	text-align: left;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 980px;
+	padding-top: 65px;
+	height: 25px;
+}

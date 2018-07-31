@@ -1,0 +1,15 @@
+giao dien trang room gom 3 phong, duoc dat thanh` 3 hinh` nam doc tuong ung! Superior, duluxe, dplex.
+
+////////////
+
+y´ tuong:  trang thai out - nhu hinh` 
+	Over: hinh` se chuyen toi' va` hien ra chu cua phong` vd: superior, duluxe, duplex.
+	CLick: giong' nhu cu?a lu`a cu?a Nhâ?t Ba?n, click va`o se~ lu`a qua pha?i hay click tiep cac room ke ben se tra ve` nhu cu~ va` room dc click ke tiep se hien ra  ( da co hinh minh hoa khi doClick ) 
+
+**** Theo t nghi la` se dung TweenLite va mat na ( mask ) de che di hinh khi di chuyen wa phai 
+
+
+/////////////////////////////////////////////////
+
+Nhung cai nhu Book hay explore minh se lam sau, tap trung lam cho xong he muc menu chinh truoc da!
+ 

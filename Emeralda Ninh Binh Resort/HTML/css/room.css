@@ -1,0 +1,241 @@
+@charset "utf-8";
+h7 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 9pt;
+	color: #adadad;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: block;
+	padding-top: 5px;
+}
+
+#header {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	opacity: 0.98;
+}
+
+h3  {
+	padding-top: 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #adadad;
+	margin: 0px;
+}
+
+#center_col ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+h2 {
+	font-family: "palatino Linotype";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 7px;
+	padding-bottom: 3px;
+	text-align: left;
+}
+h4 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #adadad;
+	margin-top: 120px;
+	padding: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	text-align: center;
+}
+h5 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14pt;
+	color: #8d9d54;
+	font-style: normal;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+h1  {
+	font-family: "palatino Linotype";
+	font-size: 20pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.thumb ul{
+	float:left;
+	padding:0px;
+	list-style:none;
+	width:210px;
+	height:107px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.thumb ul li{
+	float:left;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.thumb{
+	float:left;
+	margin-top:40px;
+	padding:0px;
+	width:210px;
+	height:107px;
+	overflow:hidden;
+	-moz-box-shadow:1px 1px 3px #555;
+	-webkit-box-shadow:1px 1px 3px #555;
+	box-shadow:1px 1px 3px #555;
+}
+#book h6 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	color: #fff;
+	background-color: #8d9d54;
+	display: block;
+	width: 120px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	height: 25px;
+	padding-top: 5px;
+	text-decoration: none;
+}
+#book h6 a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bolder;
+}
+#book h6 a:hover {
+	text-decoration: underline;
+	color: #fff;
+	font-weight: bolder;
+}
+
+
+
+
+
+#center_col {
+	margin: 0px;
+	float: left;
+	width: 710px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+}
+#book p {
+	margin: 0px;
+	padding: 0px;
+}
+
+#left_col {
+	margin: 0px;
+	float: left;
+	width: 210px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	text-align: center;
+}
+#cot1 {
+	margin: 0px;
+	float: left;
+	width: 180px;
+	padding-top: 0px;
+	padding-right: 40px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+#cot2 {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 160px;
+}
+#cot3 {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 160px;
+}
+#cot4 {
+	float: left;
+	width: 150px;
+}
+
+
+
+p {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: 18pt;
+	font-weight: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+}
+.thumb ul li a img{
+	float:left;
+	margin:0px;
+	padding:0px;
+	border:5px solid #fff;
+}
+#center_col h4 {
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	display: block;
+	margin-top: 95px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#center_col h4 a {
+	text-decoration: none;
+	color: #adadad;
+}
+#center_col h4 a:hover {
+	text-decoration: none;
+	color: #8d9d54;
+}

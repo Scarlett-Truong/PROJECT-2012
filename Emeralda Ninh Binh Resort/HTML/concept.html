@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Emeralda Ninh Binh Resort</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/search.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/styleconcept.css" />
+</style>
+<link href="css/CustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.minscroll.js"></script>
+<script type="text/javascript"src="js/jquery-uiscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.easingscroll.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+<link rel="stylesheet" href="css/scrollconcept.css" media="all" type="text/css">
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		$("#scroller").simplyScroll({frameRate:60});
+	});
+})(jQuery);
+</script>
+
+<script>
+$(window).load(function() {
+	mCustomScrollbars();
+});
+
+function mCustomScrollbars(){
+	$("#mcs_container").mCustomScrollbar("vertical",300,"easeOutCirc",1.05,"auto","yes","yes",15); 
+}
+
+/* function to fix the -10000 pixel limit of jquery.animate */
+$.fx.prototype.cur = function(){
+    if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) {
+      return this.elem[ this.prop ];
+    }
+    var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+    return typeof r == 'undefined' ? 0 : r;
+}
+
+/* function to load new content dynamically */
+function LoadNewContent(id,file){
+	$("#"+id+" .customScrollBox .content").load(file,function(){
+		mCustomScrollbars();
+	});
+}
+</script>
+
+<style type="text/css">
+body {
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/concept-bg.jpg);
+}
+</style></head>
+
+<body>
+<div id="header">
+	<div id="khung">
+    <img src="images/logo_emeralda.png" width="109" height="87" />
+    
+    <div id="search" style="float:right">
+	<form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+	<input type="hidden" name="sitesearch" />
+	<input type="text" name="as_q" id="searchText" style="margin-left:5px;" placeholder="Search..." />
+	</form>
+	</div><!--endsearch-->
+    
+    <div id="topLink" style="float:right">
+    <a href="reserve.html">RESERVATION</a>  |  <a href="contact.html">CONTACT</a>  |  <a href="sitemap.html">SITE MAP</a>
+    </div><!-- end topLink-->
+	<div id="nav">
+  		<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="discover.html">Discover</a></li>
+    	<li><a href="promotion.html">Promotion</a></li>
+    	<li><a href="concept.html">Concept</a></li>
+    	</ul>
+  	</div><!--end nav -->
+    <div class="clearfoat"></div>
+    </div>
+</div><!--end header -->
+<div id="maincontener">
+<div id="content" class="content"><!--begincontent-->
+<h3>EMERALDA RESORT NINH BINH</h3>
+<div id="center_col">
+<div id="mcs_container">
+	<div class="customScrollBox">
+		<div class="container">
+    		<div class="content">
+				<p><h6>Ninh Binh - Vietnam’s ancient royal capital, with much of its building credited to King Le Dai Hanh of the tenth century dynasty - is now home to Emeralda Ninh Binh. The resort sits on the edge of the Van Long Nature Reserve - a primeval tropical forest.</h6></p><br/>
+            	<p>Operated by Emeralda Management Group (EMG), Emeralda Ninh Binh Resort & Spa brings a wealth of expertise to the region, establishing the premier resort of the area.</p><br/>
+            	<p>Styled with traditional Vietnamese elements in architecture and furnishings, wedded to cutting edge enhancements and guest comforts, Emeralda Ninh Binh Resort & Spa incorporates the environmental commitment evident throughout the resort. Natural materials used for construction and finishes, with local produce and ingredients used to create memorable dining experiences.</p><br/>
+         
+            	<p>With a total of 172 guest accommodations in villa style, the resort is set in delightful gardens. The three room categories – superior, deluxe and duplex – include guest refinements such as air-conditioning with individual controls, flat panel TV’s with satellite channels, complimentary internet, mini bar, tea and coffee-making facilities and premium personal care amenities.</p><br/> 
+                <p>It is a leisurely 90-minute drive on National Highway 1 from Hanoi to Ninh Binh City, then 10-minutes to Emeralda Ninh Binh Resort & Spa. The trip takes guests through a picturesque landscape of wetlands with caves and hot springs, and the towering mountains of Non Nuoc and Canh Dieu nearby.</p>	
+			</div>
+		</div>
+        
+		<div class="dragger_container">
+    		<div class="dragger"></div>
+		</div>
+	</div>
+    <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
+</div>
+
+<!-- content to show if javascript is disabled -->
+<noscript>
+<style type="text/css">
+#mcs_container .customScrollBox{overflow:auto;}
+#mcs_container .dragger_container{display:none;}
+</style>
+</noscript>
+</div><!--end  center col -->
+<div id="left_col">
+	<ul id="scroller">
+    <li><img src="images/concept/1.jpg" width="450" height="290"/></li>
+    <li><img src="images/concept/2.jpg" width="450" height="290"/></li>
+    <li><img src="images/concept/3.jpg" width="450" height="290"/></li>
+    <li><img src="images/concept/4.jpg" width="450" height="290"/></li>
+    <li><img src="images/concept/5.jpg" width="450" height="290"/></li>
+    <li><img src="images/concept/6.jpg" width="450" height="290"/></li>
+</ul>
+</div><!--end left col-->
+
+
+
+</div><!--end content -->
+
+</div><!--end main contener -->
+<div class="clearfloat"></div><!--end clear float -->
+<div id="footer">
+Copyright &copy; 2012 by Emeralda Management Group
+</div><!--end footer -->
+</body>
+</html>

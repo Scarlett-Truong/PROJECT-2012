@@ -1,0 +1,53 @@
+
+.simply-scroll-container { /* Container DIV - automatically generated */
+	position: relative;
+}
+
+	.simply-scroll-clip { /* Clip DIV - automatically generated */
+		position: relative;
+		overflow: hidden;
+	}
+
+	.simply-scroll-list { /* UL/OL/DIV - the element that simplyScroll is inited on */
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+		.simply-scroll-list li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	
+		.simply-scroll-list li img {
+			border: none;
+			display: block;
+		}
+
+.simply-scroll { /* Customisable base class for style override DIV */
+	width: 450px;
+	height: 290px;
+	margin-bottom: 1em;
+}
+
+	.simply-scroll .simply-scroll-clip {
+		width: 450px;
+		height: 290px;
+	}
+	
+		.simply-scroll .simply-scroll-list {}
+		
+		.simply-scroll .simply-scroll-list li {
+			float: left;
+			width: 450px;
+			height: 290px;
+			padding-top: 0px;
+			padding-right: 5px;
+			padding-bottom: 0px;
+			padding-left: 5px;
+		}
+		.simply-scroll .simply-scroll-list li img {}
+	
+

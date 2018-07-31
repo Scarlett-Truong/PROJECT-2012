@@ -1,0 +1,55 @@
+#mcs_container{
+	position:relative;
+	margin:0px;
+	width:600px;
+	height:280px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 0px;
+}
+#mcs_container .customScrollBox{
+	position:relative;
+	height:280px;
+	overflow:hidden;
+}
+#mcs_container .customScrollBox .container{
+	position:relative;
+	width:580px;
+	top:0;
+	float:left;
+}
+#mcs_container .customScrollBox .content{clear:both;}
+#mcs_container .customScrollBox .content p{
+	color:#adadad;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12pt;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 5;
+	padding-left: 0px;
+}
+
+#mcs_container .dragger_container{position:relative; width:470px; height:295px; float:left; margin:0px 0 0 10px; background:#000; cursor:pointer -moz-border-radius:2px; -khtml-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; cursor:s-resize;}
+
+#mcs_container .scrollUpBtn,#mcs_container .scrollDownBtn{position:absolute; display:inline-block; width:14px; height:15px; margin-right:12px; text-decoration:none; right:0; filter:alpha(opacity=20); -moz-opacity:0.20; -khtml-opacity:0.20; opacity:0.20;}
+#mcs_container .scrollUpBtn{
+	top:16px;
+	background-image: url(../images/mcs_btnUp.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#mcs_container .scrollDownBtn{
+	bottom:12px;
+	background-image: url(../images/mcs_btnDown.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#mcs_container .scrollUpBtn:hover,#mcs_container .scrollDownBtn:hover{filter:alpha(opacity=60); -moz-opacity:0.60; -khtml-opacity:0.60; opacity:0.60;}
+.content h6 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

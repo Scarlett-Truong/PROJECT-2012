@@ -1,0 +1,179 @@
+@charset "utf-8";
+body {
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/organics_res_bg.jpg);
+}
+
+#maincontener{
+	width: 980px;
+	margin-top: 108px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	opacity :0.93;
+	margin-bottom: 0px;
+	height: 340px;
+	padding: 0px;
+}
+.thumb ul{
+	float:left;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	width:210px;
+	height:107px;
+}
+#footer {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #FFF;
+	text-align: left;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 980px;
+	padding-top: 70px;
+	height: 25px;
+}
+.thumb ul li{
+	float:left;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.thumb{
+	float:left;
+	margin-top:8px;
+	padding:0px;
+	width:210px;
+	height:107px;
+	overflow:hidden;
+	-moz-box-shadow:1px 1px 3px #555;
+	-webkit-box-shadow:1px 1px 3px #555;
+	box-shadow:1px 1px 3px #555;
+}
+.thumb ul li a img{
+	float:left;
+	margin:0px;
+	padding:0px;
+	border:5px solid #fff;
+}
+#center_col {
+	margin: 0px;
+	float: left;
+	width: 720px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+#left_col {
+	margin: 0px;
+	float: left;
+	width: 210px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+
+p {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: 18pt;
+	font-weight: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3  {
+	padding-top: 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #adadad;
+	margin: 0px;
+	padding-left: 20px;
+}
+
+
+h2 {
+	font-family: "palatino Linotype";
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 1px;
+	text-align: left;
+}
+h4 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #adadad;
+	margin-top: 120px;
+}
+
+
+h1  {
+	font-family: "palatino Linotype";
+	font-size: 21pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+h5 {
+	font-family: "palatino Linotype";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 1px;
+	padding-left:40px;
+	text-align: left;
+	padding-bottom:5px;
+}
+h6 {
+	font-family: "palatino Linotype";
+	font-size: 14pt;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 1px;
+	padding-left:50px;
+	text-align: left;
+	padding-bottom:5px;
+}
+a {
+	color: #adadad;
+	text-decoration: none;
+}
+a:hover {
+	color: #8d9d54;
+	text-decoration: none;
+}

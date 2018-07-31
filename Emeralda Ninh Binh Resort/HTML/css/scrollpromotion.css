@@ -1,0 +1,43 @@
+.simply-scroll-container { 
+	position: relative;
+}
+
+.simply-scroll-clip {
+	position: relative;
+	overflow: hidden;
+}
+
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+.vert { 
+	width: 450px;
+	height: 290px;	
+}
+.vert .simply-scroll-clip {
+	width: 450px;
+	height: 290px;
+}
+.vert .simply-scroll-list {}
+.vert .simply-scroll-list li {
+	width: 450px;
+	height: 290px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+.vert .simply-scroll-list li img {}
+	

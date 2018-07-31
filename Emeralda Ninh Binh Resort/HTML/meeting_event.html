@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Emeralda Ninh Binh Resort</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/search.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/stylemeeting.css" />
+<link rel="stylesheet" type="text/css" href="css/cloud-zoom.css" />
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/ChunkFive_400.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+			Cufon.replace('h1',{ textShadow: '1px 1px #D1EF95'});
+			Cufon.replace('h2',{ textShadow: '1px 1px #D1EF95'});
+		</script>
+<!-- The JavaScript -->
+		<script type="text/javascript" src="fancybox/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript" src="js/cloud-zoom.1.0.2.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				/*
+				fancybox init on each cloud-zoom element
+				 */
+				$("#content .cloud-zoom").fancybox({
+					'transitionIn'	:	'elastic',
+					'transitionOut'	:	'none',
+					'speedIn'		:	600,
+					'speedOut'		:	200,
+					'overlayShow'	:	true,
+					'overlayColor'	:	'#000',
+					'cyclic'		:	true,
+					'easingIn'		:	'easeInOutExpo'
+				});
+
+				/*
+				because the cloud zoom plugin draws a mousetrap
+				div on top of the image, the fancybox click needs
+				to be changed. What we do here is to trigger the click
+				the fancybox expects, when we click the mousetrap div.
+				We know the mousetrap div is inserted after
+				the <a> we want to click:
+				 */
+				$("#content .mousetrap").live('click',function(){
+					$(this).prev().trigger('click');
+				});
+
+				/*
+				the content element;
+				each list item / group with several images
+				 */
+				var $content	= $('#content'),
+				$thumb_list = $content.find('.thumb > ul');
+				/*
+				we need to set the width of each ul (sum of the children width);
+				we are also defining the click events on the right and left arrows
+				of each item.
+				 */
+				$thumb_list.each(function(){
+					var $this_list	= $(this),
+					total_w		= 0,
+					loaded		= 0,
+					//preload all the images first
+					$images		= $this_list.find('img'),
+					total_images= $images.length;
+					$images.each(function(){
+						var $img	= $(this);
+						$('<img/>').load(function(){
+							++loaded;
+							if (loaded == total_images){
+								$this_list.data('current',0).children().each(function(){
+									total_w	+= $(this).width();
+								});
+								$this_list.css('width', total_w + 'px');
+
+								//next / prev events
+
+								$this_list.parent()
+								.siblings('.next')
+								.bind('click',function(e){
+									var current = $this_list.data('current');
+									if(current == $this_list.children().length -1) return false;
+									var	next	= ++current,
+									ml		= -next * $this_list.children(':first').width();
+
+									$this_list.data('current',next)
+									.stop()
+									.animate({
+										'marginLeft'	: ml + 'px'
+									},400);
+									e.preventDefault();
+								})
+								.end()
+								.siblings('.prev')
+								.bind('click',function(e){
+									var current = $this_list.data('current');
+									if(current == 0) return false;
+									var	prev	= --current,
+									ml		= -prev * $this_list.children(':first').width();
+
+									$this_list.data('current',prev)
+									.stop()
+									.animate({
+										'marginLeft'	: ml + 'px'
+									},400);
+									e.preventDefault();
+								});
+							}
+						}).attr('src',$img.attr('src'));
+					});
+				});
+			});
+        </script>
+<style type="text/css">
+body {
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/meeting-bg.jpg);
+}
+</style></head>
+
+<body>
+<div id="header">
+	<div id="khung">
+    <img src="images/logo_emeralda.png" width="109" height="87" />
+    
+    <div id="search" style="float:right">
+	<form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+	<input type="hidden" name="sitesearch" />
+	<input type="text" name="as_q" id="searchText" style="margin-left:5px;" placeholder="Search..." />
+	</form>
+	</div><!--endsearch-->
+    
+    <div id="topLink" style="float:right">
+    <a href="reserve.html">RESERVATION</a>  |  <a href="contact.html">CONTACT</a>  |  <a href="sitemap.html">SITE MAP</a>
+    </div><!-- end topLink-->
+	<div id="nav">
+  		<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="discover.html">Discover</a></li>
+    	<li><a href="promotion.html">Promotion</a></li>
+    	<li><a href="concept.html">Concept</a></li>
+    	</ul>
+  	</div><!--end nav -->
+    <div class="clearfoat"></div>
+    </div>
+</div><!--end header -->
+<div id="maincontener">
+<div id="content" class="content"><!--begincontent-->
+<h3>SERVICES >> MEETING AND EVENT</h3>
+<h1>EMERALDA MEETING AND EVENT CENTER</h1>
+<div id="left_col">
+	 <h2>Description</h2>
+		
+	  <div class="thumb"><!--beginthumb-->
+		<ul>
+		<li><a rev="group1" rel="zoomHeight:200, zoomWidth:400, adjustX: 10, adjustY:-4, position:'body'" class='cloud-zoom' href="images/imagemeeting/formstack1.jpg"><img src="images/imagemeeting/thumbs/formstack1.jpg" alt="Formstack 1"/></a></li>
+        
+		<li><a rev="group1" rel="
+        zoomHeight:200, zoomWidth:400, adjustX: 10, adjustY:-4, position:'body'" class='cloud-zoom' href="images/imagemeeting/formstack2.jpg"><img src="images/imagemeeting/thumbs/formstack2.jpg" alt="Formstack 2"/></a></li>
+        
+		<li><a rev="group1" rel="zoomHeight:200, zoomWidth:400, adjustX: 10, adjustY:-4, position:'body'" class='cloud-zoom' href="images/imagemeeting/formstack3.jpg"><img src="images/imagemeeting/thumbs/formstack3.jpg" alt="Formstack 3"/></a></li>
+        
+        <li><a rev="group1" rel="zoomHeight:200, zoomWidth:400, adjustX: 10, adjustY:-4, position:'body'" class='cloud-zoom' href="images/imagemeeting/formstack4.jpg"><img src="images/imagemeeting/thumbs/formstack4.jpg" alt="Formstack 2"/></a></li>
+		</ul>
+		</div><!--end thumb -->
+    
+    <h4>Click to view
+    <br/>
+ Get more information please call :
+ <p>Tel: + 84 303 658 333</p>
+<p>Fax: +84 303 658 223</p>
+<p>Email : info@emeralda.com</p></h4>
+
+    
+</div><!--end left col-->
+ 
+<div id="center_col">
+<p>Emeralda Ninh Binh Resort is an ideal place for holding meeting in central Viet Nam. It is right center place for colleagues meets together nationwide as well as around the world. It is not only for participants meets together, but also enjoy relaxing at the resort or discover the world cultural heritages of Trang An, Kenh Ga, Cuc Phuong,... before returning to work.<br/>
+Our meeting venues use natural light and offer 4,485 square feet of indoor meeting space.With the assistance of our professional and knowledgeable services team and gracious hospitality, the success of your group event is not just ensured — it's promised.
+</p>
+</div><!--end  center col -->
+
+<div id="right_col">
+<h2>Treatment including:</h2>  
+<p>Big Stage
+<br/>High Quality Rooms Equipments
+<br/>Smart Breakout Rooms
+<br/>Multimedia
+<br/>Conference Area
+<br/>Stage &amp; Dance Floor
+<br/>Slide Projector
+<br/>Flip Chart
+<br/>Internet Connections</p><strong></strong>
+</p>
+</div><!--end right col -->
+
+</div><!--end content -->
+
+</div><!--end main contener -->
+<div class="clearfloat"></div><!--end clear float -->
+<div id="footer">
+Copyright &copy; 2012 by Emeralda Management Group
+</div><!--end footer -->
+</body>
+</html>

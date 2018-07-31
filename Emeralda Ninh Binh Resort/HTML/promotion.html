@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Emeralda Ninh Binh Resort</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/search.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/stylepromotion.css" />
+<link rel="stylesheet" href="css/scrollpromotion.css" media="all" type="text/css">
+<link href="css/CustomScrollbar.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.minscroll.js"></script>
+<script type="text/javascript"src="js/jquery-uiscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.easingscroll.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		$("#scroller").simplyScroll({orientation:'vertical',direction:'backwards',customClass:'vert'});
+	});
+})(jQuery);
+</script>
+
+<script>
+$(window).load(function() {
+	mCustomScrollbars();
+});
+
+function mCustomScrollbars(){
+	$("#mcs_container").mCustomScrollbar("vertical",300,"easeOutCirc",1.05,"auto","yes","yes",15); 
+}
+
+/* function to fix the -10000 pixel limit of jquery.animate */
+$.fx.prototype.cur = function(){
+    if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) {
+      return this.elem[ this.prop ];
+    }
+    var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+    return typeof r == 'undefined' ? 0 : r;
+}
+
+/* function to load new content dynamically */
+function LoadNewContent(id,file){
+	$("#"+id+" .customScrollBox .content").load(file,function(){
+		mCustomScrollbars();
+	});
+}
+</script>
+
+<style type="text/css">
+body {
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/promotion-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+</style></head>
+
+<body>
+<div id="header">
+	<div id="khung">
+    <img src="images/logo_emeralda.png" width="109" height="87" />
+    
+    <div id="search" style="float:right">
+	<form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+	<input type="hidden" name="sitesearch" />
+	<input type="text" name="as_q" id="searchText" style="margin-left:5px;" placeholder="Search..." />
+	</form>
+	</div><!--endsearch-->
+    
+    <div id="topLink" style="float:right">
+    <a href="reserve.html">RESERVATION</a>  |  <a href="contact.html">CONTACT</a>  |  <a href="sitemap.html">SITE MAP</a>
+    </div><!-- end topLink-->
+	<div id="nav">
+  		<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="discover.html">Discover</a></li>
+    	<li><a href="promotion.html">Promotion</a></li>
+    	<li><a href="concept.html">Concept</a></li>
+    	</ul>
+  	</div><!--end nav -->
+    <div class="clearfoat"></div>
+    </div>
+</div><!--end header -->
+<div id="maincontener">
+<div id="content" class="content"><!--begincontent-->
+<h3>MID-AUTUMN 2012 FESTIVAL IN EMERALDA</h3>
+
+<div id="left_col">
+	<ul id="scroller">
+    <li><img src="images/promotion/1.jpg" width="450" height="290"></li>
+    <li><img src="images/promotion/2.jpg" width="450" height="290"></li>
+    <li><img src="images/promotion/3.jpg" width="450" height="290"></li>
+    <li><img src="images/promotion/4.jpg" width="450" height="290"></li>
+    <li><img src="images/promotion/5.jpg" width="450" height="290"></li>
+    <li><img src="images/promotion/6.jpg" width="450" height="290"></li>
+</ul>
+
+</div><!--end left col-->
+ 
+<div id="center_col">
+<div id="mcs_container">
+	<div class="customScrollBox">
+		<div class="container">
+    		<div class="content">
+				<p><h6>In Vietnam, Têt-Trung-Thu or the Mid-Autumn Festival is one of the most popular family holidays. It is held on the 15th day of the 8th lunar month.</h6></p><br/>
+            	<p>Welcome to one of the world’s great celebrations – Emeralda Mid-Autumn Festival ! The ancient Vietnamese harvest festival is given a modern treatment here in Asia’s world city, where glowing lanterns merge with the city’s trademark neon, fiery dragons dance through the busy streets and a full moon shines down on a festive metropolis.</p><br/>
+            	<p>Delightedly celebrate Mid Autumn Festival 2012 with hundreds of delicious and original moon cakes from Vietnamese greatly reputatable brand-name as Kinh Do, Nhu Lan, Bibica, Dai Phat... at <h7>Organics Restaurant.</h7></p><br/>
+                <p>Experience the passion of Vietnamese mythology in the glow of an innovative lantern structure. Feel the fire and fury of an ancient ritual on the streets of a modern metropolis. You also can take a chance to join the <h7>"FESTIVAL SENDS LANTERNS TOWARD HEAVEN"</h7> and enjoy this timeless Vietnamese celebration in a uniquely Emeralda way, with festival foods – traditional and nouveau – and moonlight cruises in spectacular Emeralda Resort Ninh Binh.</p><br/>
+                <p><h7>LET'S ENJOY THE FESTIVAL !</h7></p>
+			</div>
+		</div>
+        
+		<div class="dragger_container">
+    		<div class="dragger"></div>
+		</div>
+	</div>
+    <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
+</div>
+
+<!-- content to show if javascript is disabled -->
+<noscript>
+<style type="text/css">
+#mcs_container .customScrollBox{overflow:auto;}
+#mcs_container .dragger_container{display:none;}
+</style>
+</noscript>
+</div><!--end  center col -->
+</div><!--end content -->
+</div><!--end main contener -->
+<div class="clearfloat"></div><!--end clear float -->
+<div id="footer">
+Copyright &copy; 2012 by Emeralda Management Group
+</div><!--end footer -->
+</body>
+</html>

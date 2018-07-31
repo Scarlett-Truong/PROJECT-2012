@@ -1,0 +1,19 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/home-bg1.jpg);
+	background-repeat: no-repeat;
+}
+
+#maincontent {
+	margin-top: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #fff;
+	background-opacity: 0.5;
+	width: 990px;
+	padding-top: 10px;
+	padding-left: 10px;
+	height: 350px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Emeralda Ninh Binh Resort</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/search.css" type="text/css"/>
+</style>
+<script type="text/javascript" src="js/jquery.minscroll.js"></script>
+<script type="text/javascript"src="js/jquery-uiscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.easingscroll.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script><script type="text/javascript">
+(function($) {
+	$(function() {
+		$("#scroller").simplyScroll({frameRate:60});
+	});
+})(jQuery);
+</script>
+
+<script>
+$(window).load(function() {
+	mCustomScrollbars();
+});
+
+function mCustomScrollbars(){
+	$("#mcs_container").mCustomScrollbar("vertical",300,"easeOutCirc",1.05,"auto","yes","yes",15); 
+}
+
+/* function to fix the -10000 pixel limit of jquery.animate */
+$.fx.prototype.cur = function(){
+    if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) {
+      return this.elem[ this.prop ];
+    }
+    var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+    return typeof r == 'undefined' ? 0 : r;
+}
+
+/* function to load new content dynamically */
+function LoadNewContent(id,file){
+	$("#"+id+" .customScrollBox .content").load(file,function(){
+		mCustomScrollbars();
+	});
+}
+</script>
+<link href="css/trang_an.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	
+
+#maincontener{
+	width: 980px;
+	margin-top: 102px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	opacity :0.95;
+	margin-bottom: 0px;
+	padding: 0px;
+	height: 350px;
+}
+body {
+	background-image: url(images/discover/kenh%20ga/bg1.jpg);
+	margin: 0px;
+	padding: 0px;
+}
+</style>
+<link href="css/tour.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+	<div id="khung">
+    <img src="images/logo_emeralda.png" width="109" height="87" />
+    
+    <div id="search" style="float:right">
+	<form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+	<input type="hidden" name="sitesearch" />
+	<input type="text" name="as_q" id="searchText" style="margin-left:5px;" placeholder="Search..." />
+	</form>
+	</div><!--endsearch-->
+    
+    <div id="topLink" style="float:right">
+    <a href="Reserve.html">RESERVATION</a>  |  <a href="contact.html">CONTACT</a>  |  <a href="sitemap.html">SITE MAP</a>
+    </div><!-- end topLink-->
+	<div id="nav">
+  		<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="discover.html">Discover</a></li>
+    	<li><a href="promotion.html">Promotion</a></li>
+    	<li><a href="concept.html">Concept</a></li>
+    	</ul>
+  	</div><!--end nav -->
+    <div class="clearfoat"></div>
+    </div>
+</div><!--end header -->
+<div id="maincontener">
+<div id="content" class="content"><!--begincontent-->
+<h3>DISCOVER >> TOUR PROGRAMS</h3>
+<h1>Tour 1: KENH GA - BAI DINH</h1>
+
+<div id="center_col">
+<div id="mcs_container">
+	<div class="customScrollBox">
+		<div class="container">
+    		<div class="content">
+            <h2>1,260,000 VND/pax (mini.2-3 pax) or 1,155,000 VND/pax (mini.4 pax) <br/>Inclusive: Transport, entrance fee, lunch & ESP guide.</h2>
+            <h6>Kenh Ga floating village - Bai Dinh Pagoda - Vietnam Packages</h6>
+         <p>The Village of Kenh Ga (Chicken canal) gets its name, apparently, from the number of wild chickens that used to live here. That is the riverine way of life and the main draw. The local people seem to spend most of their lives on the water: watching over their floating fish-breeding pens, harvesting river grass for fish feed or selling veggies boat-to-boat. Even the children commute to school by boat. The river used for everything from bathing, to washing plucked chickens, Particularly, here people row boats with their feet. <br/>
+              Bai Dinh Pagoda or Bai Dinh Spiritual and Cultural Complex is a complex of Buddhist temples in Bai Dinh Mountain, consisting of one old temple area and a new temple area. This is considered the largest complex of Buddhist temples at completion in Vietnam. This is a popular site for Buddhist pilgrims across Vietnam. Currently, this mass is executing many items of Pagoda including Tam The (Past, Present and Future) Temple, Sanctuary and Bodhisattva Kwan Yin statue, Dharma Temple, Bell-tower, Three-door temple gate, and dormitory area for Buddhist monks, etc.</p>
+              <h2>Tour schedule</h2>
+              <p>
+Morning:<br/>
+8:30 am: Leave for Kenh Ga, have a motor boat trip along Hoang Long river – King Dragon river to enjoy river and rice paddy sceneries, and to see how the local people's everyday lives are in mountainous area – inland Ha Long bay. Walk about 2km among rice fields to admire a wonderfully natural cave with many stalactites and stalagmites shapes differently.
+ <br/>
+12:00 am: Have lunch at local restaurant.
+<br/>Afternoon:<br/>
+13:00 pm: Go to Bai Dinh pagoda you will have chance to see the biggest pagoda in Southeast Asia. This is very Popular to local and tourist. Finish tour at hotel.</p>
+            </div>
+		</div>
+        
+		<div class="dragger_container">
+    		<div class="dragger"></div>
+		</div>
+	</div>
+    <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
+</div>
+
+<!-- content to show if javascript is disabled -->
+<noscript>
+<style type="text/css">
+#mcs_container .customScrollBox{overflow:auto;}
+#mcs_container .dragger_container{display:none;}
+</style>
+</noscript>
+</div><!--end  center col -->
+
+<div id="left_col">
+	<ul id="scroller">
+    <li><img src="images/discover/kenh ga/2_08.jpg" width="320" height="200" /></li>
+    <li><img src="images/discover/bai dinh/2_08.jpg" width="320" height="200" /></li>
+    <li><img src="images/discover/kenh ga/1_08.jpg" width="320" height="200" /></li>
+</ul>
+<h4>Other tour programs: 
+ <br/>
+  <a href="tour_3.html">Tam Coc - Bich Dong - Hoa Lu </a>| <a href="tour_2.html">Phat Diem - Kenh Ga</a></h4>	
+</div><!--end left col-->
+
+
+
+</div><!--end content -->
+
+</div><!--end main contener -->
+<div class="clearfloat"></div><!--end clear float -->
+<div id="footer">
+Copyright &copy; 2012 by Emeralda Management Group
+</div><!--end footer -->
+</body>
+</html>

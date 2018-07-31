@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Emeralda Ninh Binh Resort</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/search.css" type="text/css"/>
+</style>
+<script type="text/javascript" src="js/jquery.minscroll.js"></script>
+<script type="text/javascript"src="js/jquery-uiscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.easingscroll.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.simplyscroll.js"></script><script type="text/javascript">
+(function($) {
+	$(function() {
+		$("#scroller").simplyScroll({frameRate:60});
+	});
+})(jQuery);
+</script>
+
+<script>
+$(window).load(function() {
+	mCustomScrollbars();
+});
+
+function mCustomScrollbars(){
+	$("#mcs_container").mCustomScrollbar("vertical",300,"easeOutCirc",1.05,"auto","yes","yes",15); 
+}
+
+/* function to fix the -10000 pixel limit of jquery.animate */
+$.fx.prototype.cur = function(){
+    if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) {
+      return this.elem[ this.prop ];
+    }
+    var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+    return typeof r == 'undefined' ? 0 : r;
+}
+
+/* function to load new content dynamically */
+function LoadNewContent(id,file){
+	$("#"+id+" .customScrollBox .content").load(file,function(){
+		mCustomScrollbars();
+	});
+}
+</script>
+<link href="css/trang_an.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	
+
+#maincontener{
+	width: 980px;
+	margin-top: 102px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	opacity :0.95;
+	margin-bottom: 0px;
+	padding: 0px;
+	height: 350px;
+}
+body {
+	background-image: url(images/discover/hoa%20lu/bg.jpg);
+	margin: 0px;
+	padding: 0px;
+}
+</style></head>
+
+<body>
+<div id="header">
+	<div id="khung">
+    <img src="images/logo_emeralda.png" width="109" height="87" />
+    
+    <div id="search" style="float:right">
+	<form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+	<input type="hidden" name="sitesearch" />
+	<input type="text" name="as_q" id="searchText" style="margin-left:5px;" placeholder="Search..." />
+	</form>
+	</div><!--endsearch-->
+    
+    <div id="topLink" style="float:right">
+    <a href="reserve.html">RESERVATION</a>  |  <a href="contact.html">CONTACT</a>  |  <a href="sitemap.html">SITE MAP</a>
+    </div><!-- end topLink-->
+	<div id="nav">
+  		<ul>
+    	<li><a href="Index.html">Home</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="discover.html">Discover</a></li>
+    	<li><a href="promotion.html">Promotion</a></li>
+    	<li><a href="concept.html">Concept</a></li>
+    	</ul>
+  	</div><!--end nav -->
+    <div class="clearfoat"></div>
+    </div>
+</div><!--end header -->
+<div id="maincontener">
+<div id="content" class="content"><!--begincontent-->
+<h3>DISCOVER >> HISTORICAL SITES</h3>
+<h1>HOA LU ANCIENT CAPITAL</h1>
+<div id="center_col">
+		<h2>Destination</h2>
+        <h6>Hoa Lu Ancient Capital - Vietnam Tourist</h6>
+<p>
+Hoa Lu is the legendary ancient capital of Viet Nam. The old capital was built more than 10 centuries ago under the reign of Dinh Dynasty and Le Dynasty. It was its capital for just 41 years (968-1009). The capital then was moved to Thang Long under the Ly Dynasty (1010). With the size of 3000ha, Hoa Lu is protected by a natural wall with surrounding Trang An limestone mountains and Hoang Long river. The combination between mountains and rivers make Hoa Lu surroundings very picturesque. Hoa Lu is famous for the number of palaces, pagodas, tombs and pavilions that were built by different dynasties.They were built in the 11th century to dedicate King Dinh Tien Hoang and his successor Le Dai Hanh.</p>	
+		
+        
+		
+	
+    <a href="#" class="scrollUpBtn"></a> <a href="#" class="scrollDownBtn"></a>
+
+
+<!-- content to show if javascript is disabled -->
+<noscript>
+<style type="text/css">
+#mcs_container .customScrollBox{overflow:auto;}
+#mcs_container .dragger_container{display:none;}
+</style>
+</noscript>
+</div><!--end  center col -->
+
+<div id="left_col">
+	<ul id="scroller">
+    
+    <li><img src="images/discover/hoa lu/2_08.jpg" width="320" height="200" /></li>
+    <li><img src="images/discover/hoa lu/1_08.jpg" width="320" height="200" /></li>
+</ul>
+<h4>Other historical sites : 
+  <a href="bai_dinh.html">Bai Dinh </a>| <a href="phat_diem.html">Phat Diem</a></h4>	
+</div><!--end left col-->
+
+
+
+</div><!--end content -->
+
+</div><!--end main contener -->
+<div class="clearfloat"></div><!--end clear float -->
+<div id="footer">
+Copyright &copy; 2012 by Emeralda Management Group
+</div><!--end footer -->
+</body>
+</html>

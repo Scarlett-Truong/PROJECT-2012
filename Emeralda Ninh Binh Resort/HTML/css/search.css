@@ -1,0 +1,37 @@
+@charset "utf-8";
+#search {
+	padding-left: 0px;
+	color:#666;
+	font-size:12pt;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	text-align: right;
+	padding-top: 0px;
+	float: right;
+	padding-right: 0px;
+}
+
+#search input[type="text"] {
+border:none;
+font: normal 12px Arial,Helvetica,Sans-serif;
+color: #adadad;
+width:120px;
+padding: 6px 15px 6px 35px;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+-webkit-transition: all 0.7s ease 0s;
+-moz-transition: all 0.7s ease 0s;
+-o-transition: all 0.7s ease 0s;
+transition: all 0.7s ease 0s
+
+#search input[type="text"]:focus {
+background:url(../image/header/search_icon_dark.png) no-repeat 10px 6px #fcfcfc;
+color: #6a6f75;
+width: 200px;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+text-shadow:none;
+}

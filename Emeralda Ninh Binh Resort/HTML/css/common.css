@@ -1,0 +1,131 @@
+#header {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+	opacity: 0.9;
+}
+#footer {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #FFF;
+	text-align: left;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 980px;
+	padding-top: 65px;
+	height: 25px;
+}
+
+#khung {
+	width: 925px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+#left_col h4 p {
+	color: #8d9d54;
+}
+
+
+#header img {
+	padding: 0px;
+	float: left;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#topLink {
+	padding-top: 15px;
+	color: #adadad;
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 9pt;
+	font-style: normal;
+	font-weight: normal;
+	width: auto;
+	margin: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	float: right;
+}
+#topLink a {
+	color: #adadad;
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#topLink a:hover {
+	color: #8d9d54;
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#nav ul {
+	list-style-type: none;
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 13.5pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #adadad;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #d0d0d0;
+	border-bottom-color: #d0d0d0;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	float: right;
+	position: relative;
+	width: 490px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+#nav ul li a {
+	color: #adadad;
+	text-decoration: none;
+	display: block;
+	margin: 0px;
+	height: 24px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#nav ul li a:hover {
+	color: #8d9d54;
+	text-decoration: none;
+	display: block;
+	margin: 0px;
+	height: 24px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#nav ul li {
+	display: block;
+	float: left;
+	height: 32px;
+}
+
+.clearfloat {
+	clear: both;
+}

@@ -1,0 +1,145 @@
+#maincontener {
+	width: 980px;
+	margin-top: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	opacity :0.93;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	height: 300px;
+}
+body {
+	font-family: "palatino Linotype", "book Antiqua", serif, garamond;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/organics_res_bg.jpg);
+}
+
+
+
+h1  {
+	font-family: "palatino Linotype";
+	font-size: 21pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #8d9d54;
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+#cot 1
+{
+	
+}#cot_1 {
+	margin: 0px;
+	float: left;
+	width: 166px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+#cot_2 {
+	margin: 0px;
+	float: left;
+	width: 176px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+#cot_3 {
+	margin: 0px;
+	float: left;
+	width: 176px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+#cot_5 {
+	margin: 0px;
+	float: left;
+	width: 166px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+a {
+	color: #adadad;
+	text-decoration: none;
+}
+a:hover {
+	color: #8d9d54;
+	text-decoration: none;
+}
+h2 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: normal;
+	color: #adadad;
+	margin: 0px;
+	padding: 0px;
+}
+ul {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding: 0px;
+}
+#cot_4 ul li {
+	margin-bottom: 0px;
+	margin-left: 16px;
+}
+#cot_3 ul li {
+	margin-bottom: 0px;
+	margin-left: 16px;
+}
+#cot_2 ul li {
+	margin-bottom: 0px;
+	margin-left: 16px;
+}
+
+
+#footer {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12pt;
+	font-style: italic;
+	font-weight: normal;
+	color: #FFF;
+	text-align: left;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 980px;
+	padding-top: 95px;
+	height: 25px;
+}
+
+
+#cot_4 {
+	margin: 0px;
+	float: left;
+	width: 176px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
